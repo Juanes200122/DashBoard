@@ -1,0 +1,595 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+:root {
+  --color-primary: #6C9BCF;
+  --color-danger: #FF0060;
+  --color-success: #1B9C85;
+  --color-warning: #F7D060;
+  --color-white: #fff;
+  --color-info-dark: #7d8da1;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-dark-variant: #677483;
+  --color-background: #f6f6f9;
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 1.2rem;
+  --card-padding: 1.8rem;
+  --padding-1: 1.2rem;
+  --box-shadow: 0 2rem 3rem var(--color-light);
+  --color-cards: #fcfcfc;
+  --color-bodyWhite: #eceff0;
+  --color-boxShadow: #dbe7eb;
+  --box-shadow: 0 2rem 3rem var(--color-light);
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-background: #181a1e;
+  --color-white: #202528;
+  --color-dark: #edeffd;
+  --color-dark-variant: #a3bdcc;
+  --color-light: rgba(0, 0, 0, 0.4);
+  --box-shadow: 0 2rem 3rem var(--color-light);
+}
+
+* {
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  user-select: none;
+}
+
+body {
+  background-color: var(--color-bodyWhite);
+  transition: background-color 0.5s;
+  font-family: "Poppins", sans-serif;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.divContainer__Master {
+  width: 2000px;
+}
+.divContainer__Master .headerContainer {
+  /*header container*/
+}
+.divContainer__Master .headerContainer .containUp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px 0px 40px;
+  transition: padding 0.5s es;
+}
+.divContainer__Master .headerContainer .containUp .containP1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.divContainer__Master .headerContainer .containUp .containP1 .containerSlogan {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.divContainer__Master .headerContainer .containUp .containP1 .containerSlogan .sloganText {
+  font-weight: bold;
+  font-size: 25px;
+}
+.divContainer__Master .headerContainer .containUp .containP1 .containerSlogan .sloganText .colorText {
+  color: rgb(255, 28, 28);
+}
+.divContainer__Master .headerContainer .containUp .containP1 .containerSlogan .slogan {
+  width: 50px;
+  height: 50px;
+  background-image: url(../image/sloganColor.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.divContainer__Master .headerContainer .containUp .containP1 .tittlePag {
+  margin-left: 90px;
+  transition: margin 0.5s ease;
+  font-size: 35px;
+  font-weight: bold;
+}
+.divContainer__Master .headerContainer .containUp .containP2 {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.divContainer__Master .headerContainer .containUp .containP2 .content {
+  padding-top: 5px;
+}
+.divContainer__Master .headerContainer .containUp .containP2 .sectionprofile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.divContainer__Master .headerContainer .containUp .containP2 .sectionprofile .userlp1 {
+  display: flex;
+  flex-direction: column;
+}
+.divContainer__Master .headerContainer .containUp .containP2 .sectionprofile .userlp1 .nameUser01 .weightText {
+  font-weight: bold;
+}
+.divContainer__Master .headerContainer .containUp .containP2 .sectionprofile .userlp1 .nameUser02 {
+  text-align: end;
+}
+.divContainer__Master .headerContainer .containUp .containP2 .sectionprofile .imgProfile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.divContainer__Master .mainSection .sectionClass__contain {
+  width: 100%;
+  height: calc(100vh - 63px);
+  padding: 30px;
+  gap: 20px;
+  display: flex;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar {
+  position: relative;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar #dropdownMenu {
+  display: none;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .labelLP {
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-cards);
+  border-radius: 30px;
+  position: absolute;
+  z-index: 999;
+  right: 30px;
+  top: -15px;
+  transition: right 0.5s ease-in-out, rotate 0.5s ease-in-out;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .labelLP i {
+  font-size: 20px;
+  color: var(--color-dark-variant);
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar #dropdownMenu:checked + .labelLP {
+  rotate: 180deg;
+  right: 16px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar #dropdownMenu:checked + .labelLP + .navbarNav {
+  width: 70px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar #dropdownMenu:checked + .labelLP + .navbarNav .navbarNavList .container__navbar ul li a span {
+  opacity: 0;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav {
+  width: 230px;
+  height: 100%;
+  position: relative;
+  transition: width 0.5s ease-in-out;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList {
+  height: 100%;
+  background-color: var(--color-cards);
+  box-shadow: 2px 2px 20px var(--color-boxShadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 20px 0px 20px 0px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .container__navbar {
+  overflow-y: auto;
+  width: 250px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .container__navbar ul {
+  position: relative;
+  transition: background-color 0.3s;
+  padding: 15px 15px 15px 25px;
+  margin: 0px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .container__navbar ul:hover {
+  background-color: var(--color-bodyWhite);
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .container__navbar ul:hover li a {
+  color: rgb(106, 131, 255);
+  transition: color 0.3s;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .container__navbar ul:hover::after {
+  content: "";
+  width: 7px;
+  height: 20px;
+  background-color: rgba(106, 131, 255, 0.588);
+  position: absolute;
+  left: 0;
+  top: 20px;
+  transition: width 0.3s, background-color 0.3s;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .container__navbar ul li a {
+  width: 120px;
+  display: flex;
+  gap: 15px;
+  color: rgb(131, 131, 131);
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .container__navbar ul li a i {
+  font-size: 20px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .container__navbar ul li a span {
+  transition: opacity 0.7s ease-in-out;
+  opacity: 1;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .logoutUser {
+  padding: 15px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.3s, color 0.3s;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .logoutUser:hover {
+  background-color: var(--color-bodyWhite);
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .logoutUser:hover li a {
+  color: rgb(106, 131, 255);
+  transition: color 0.3s;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .logoutUser::after {
+  content: "";
+  width: 0%;
+  height: 5px;
+  background-color: rgba(106, 131, 255, 0.588);
+  position: absolute;
+  bottom: 10px;
+  transition: width 0.3s, background-color 0.3s;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .logoutUser:hover::after {
+  width: 80%;
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .logoutUser a {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  color: rgb(131, 131, 131);
+}
+.divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .logoutUser a .bi-box-arrow-left::before {
+  rotate: 180deg;
+  font-size: 20px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter::-webkit-scrollbar {
+  width: 1px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter {
+  width: 70%;
+  transition: width 0.5s ease;
+  overflow-x: auto;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics {
+  display: flex;
+  gap: 20px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .container {
+  width: 100%;
+  height: 170px;
+  background-color: var(--color-cards);
+  box-shadow: 2px 2px 20px var(--color-boxShadow);
+  border-radius: 30px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp1,
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp2,
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 70px;
+  transition: gap 0.5s ease;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp1 .containerSAles,
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp2 .containerSAles,
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp3 .containerSAles {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp1 .containerSAles span:nth-child(2),
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp2 .containerSAles span:nth-child(2),
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp3 .containerSAles span:nth-child(2) {
+  font-weight: bold;
+  font-size: 30px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-cards);
+  box-shadow: 2px 2px 20px var(--color-boxShadow);
+  height: auto;
+  border-radius: 30px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles {
+  height: auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles .containerImg {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: background-color 0.5s, box-shadow 0.5s;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles .containerImg a {
+  color: rgb(131, 131, 131);
+  transition: color 0.2s ease-in-out;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles .containerImg a:hover {
+  color: var(--color-primary);
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles .containerImg i {
+  font-size: 60px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles .containerImg img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles .containerImg .timeprofile {
+  font-size: 15px;
+  color: rgb(131, 131, 131);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles .containerImg .timeprofile .active {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles .containerImg .nameProfile {
+  font-weight: bold;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .SloganCont {
+  width: 100%;
+  height: 300px;
+  background-color: var(--color-cards);
+  box-shadow: 2px 2px 20px var(--color-boxShadow);
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .SloganCont img {
+  width: 150px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .SloganCont .sloganText {
+  font-size: 30px;
+  font-weight: bold;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .SloganCont .pef0 {
+  color: rgb(131, 131, 131);
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders {
+  width: 100%;
+  border-radius: 30px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders01 .svg_Reminder {
+  width: 40px;
+  height: 40px;
+  background-color: var(--color-cards);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders01 .svg_Reminder #count_Reminder {
+  width: 20px;
+  height: 20px;
+  background-color: var(--color-danger);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translate(-15px, -15px);
+  font-size: 12px;
+  color: white;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders01 .svg_Reminder i {
+  font-size: 20px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02::-webkit-scrollbar {
+  width: 8px; /* Establece el ancho de la barra de desplazamiento */
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02::-webkit-scrollbar-thumb {
+  background-color: var(--color-danger); /* Establece el color del pulgar de la barra de desplazamiento */
+  border-radius: 10px; /* Establece el radio de los bordes para la barra de desplazamiento en WebKit */
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 320px;
+  overflow-x: auto;
+  padding: 0px 5px 0px 0px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02 .remindersNamber0 {
+  width: 100%;
+  height: 100px;
+  border-radius: 30px;
+  background-color: var(--color-cards);
+  box-shadow: 2px 2px 20px var(--color-boxShadow);
+  padding: 20px;
+  display: flex;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02 .remindersNamber0 .iconsReminder {
+  width: 60px;
+  height: 60px;
+  border-radius: 15px;
+  background-color: var(--color-success);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02 .remindersNamber0 .iconsReminder i {
+  font-size: 40px;
+  color: black;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02 .remindersNamber0 .pencil {
+  background-color: var(--color-danger);
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02 .remindersNamber0 .pencil i {
+  font-size: 30px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02 .remindersNamber0 .typeReminder {
+  width: 160px;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 12px;
+  padding-left: 10px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02 .remindersNamber0 .typeReminder .tittle {
+  font-weight: bold;
+  font-size: 17px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02 .remindersNamber0 .faviconReminder {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02 .remindersNamber0 .faviconReminder i {
+  cursor: pointer;
+  font-size: 30px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02 .remindersAdd {
+  width: 100%;
+  height: 100px;
+  border-radius: 30px;
+  border: 2px dashed var(--color-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: var(--color-primary);
+  padding: 30px;
+}
+.divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02 .remindersAdd i {
+  font-size: 30px;
+}
+
+@media (max-width: 1782px) {
+  .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles {
+    width: 900px;
+  }
+}
+@media (max-width: 1562px) {
+  .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles {
+    width: 683px;
+  }
+}
+@media (max-width: 1650px) {
+  .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp1,
+  .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp2,
+  .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp3 {
+    gap: 20px;
+  }
+}
+@media (max-width: 1480px) {
+  .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics {
+    flex-direction: column;
+  }
+  .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp1,
+  .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp2,
+  .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp3 {
+    gap: 40px;
+  }
+}
+@media (max-width: 1339px) {
+  .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles {
+    width: 460px;
+  }
+}
+@media (max-width: 1280px) {
+  .divContainer__Master .mainSection .sectionClass__contain .sectionCenter {
+    width: 100%;
+  }
+}
+@media (max-width: 1120px) {
+  .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles {
+    width: 200px;
+  }
+}
+@media (max-width: 950px) {
+  .divContainer__Master .headerContainer .containUp .containP1 .tittlePag {
+    margin-left: 12px;
+  }
+}
+@media (max-width: 760px) {
+  .divContainer__Master .mainSection .sectionClass__contain {
+    height: calc(100vh - 80px);
+  }
+  .divContainer__Master .headerContainer .containUp .containP1 .containerSlogan .sloganText {
+    font-size: 20px;
+  }
+  .divContainer__Master .headerContainer .containUp .containP1 .containerSlogan .slogan {
+    width: 40px;
+    height: 40px;
+  }
+  .divContainer__Master .headerContainer .containUp {
+    padding: 15px;
+  }
+  .divContainer__Master .mainSection .sectionClass__contain {
+    padding: 15px;
+  }
+  .divContainer__Master .headerContainer .containUp .containP1 .tittlePag {
+    display: none;
+  }
+  .divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav {
+    width: 70px;
+  }
+  .divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .container__navbar ul li a span {
+    display: none;
+  }
+  .dark-mode .divContainer__Master .mainSection .sectionClass__contain .labelLP {
+    display: none;
+  }
+  .divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .container__navbar {
+    overflow-y: auto;
+    height: 100%;
+    width: 180px;
+  }
+}
+@media (max-width: 580px) {
+  .divContainer__Master .headerContainer .containUp .containP2 .sectionprofile .userlp1 {
+    display: none;
+  }
+  .divContainer__Master .headerContainer .containUp .containP2 {
+    align-items: center;
+    gap: 30px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

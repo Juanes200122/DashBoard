@@ -1,0 +1,115 @@
+.clear {
+    clear: both;
+}
+
+.checkBox {
+    display: block;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255, 255, 255, 0);
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0px 0px 0px 2px #000000;
+}
+
+.checkBox div {
+    width: 60px;
+    height: 60px;
+    background-color: lime;
+    top: -52px;
+    left: -52px;
+    position: absolute;
+    transform: rotateZ(45deg);
+    z-index: 100;
+}
+
+.checkBox input[type="checkbox"]:checked+div {
+    left: -10px;
+    top: -10px;
+}
+
+.checkBox input[type="checkbox"] {
+    position: absolute;
+    left: 50px;
+    visibility: hidden;
+}
+
+.transition {
+    transition: 300ms ease;
+}
+
+.dark-mode .checkBox {
+    box-shadow: 0px 0px 0px 2px #fff;
+}
+
+
+
+
+/*styles de el progreso de analitycs*/
+.progresss {
+    position: relative;
+    width: 92px;
+    height: 92px;
+    border-radius: 50%;
+}
+
+svg {
+    width: 7rem;
+    height: 7rem;
+}
+
+circle {
+    fill: none;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px);
+}
+.svg1 circle {
+    stroke: var(--color-success);
+    stroke-dashoffset: -225px;
+    animation: dashAnimation1 2s forwards;
+}
+.svg2 circle {
+    stroke: var(--color-danger);
+    stroke-dashoffset: -225px;
+    animation: dashAnimation2 2s forwards;
+}
+.svg3 circle {
+    stroke: var( --color-primary);
+    stroke-dashoffset: -225px;
+    animation: dashAnimation3 2s forwards;
+}
+circle {
+    stroke-dasharray: 226px;
+}
+
+@keyframes dashAnimation1 {
+    to { stroke-dashoffset: -50; }
+}
+@keyframes dashAnimation2 {
+    to { stroke-dashoffset: -70; }
+}
+@keyframes dashAnimation3 {
+    to { stroke-dashoffset: -110; }
+}
+
+.percentage {
+    position: absolute;
+    top: -3px;
+    left: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+#progreso {
+    animation: percentageAnimation 2s forwards;
+}
+#progreso {
+    display: inline-block;
+    overflow: hidden;
+}

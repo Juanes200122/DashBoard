@@ -1,0 +1,69 @@
+@import url('style.css');
+
+* {
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.dark-mode {
+    background-color: var(--color-background);
+    color: var(--color-dark);
+}
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .navbarNav .navbarNavList {
+    background-color: var( --color-white);
+    box-shadow: 2px 2px 20px var(--box-shadow);
+}
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .navbarNav .navbarNavList .container__navbar ul li a {
+    color: var(--color-dark-variant);
+}
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .navbarNav .navbarNavList .container__navbar ul:hover li a {
+    color: var(--color-primary);
+}
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .navbarNav .navbarNavList .container__navbar ul:hover {
+    background-color: var(--color-background);
+}
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .navbarNav .navbarNavList .logoutUser:hover {
+    background-color: var(--color-background);
+}
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Profiles .containerImg .timeprofile {
+    color:  var(--color-dark-variant);
+}
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .RecentOrders .NewUsers__Orders .containerSummary .ltr1 {
+    color: var(--color-dark-variant);
+}
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .RecentOrders .NewUsers__Orders .containerSummary:hover {
+    background-color: var(--color-background);
+}
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .RecentOrders .NewUsers__Orders .hrSpace {
+    border: 1px solid var(--color-background);
+}
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .labelLP {
+    background-color: var( --color-white);
+}
+
+
+
+/*estilos predeterminaods por el momento al estar en el modo oscuro de los estados*/
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .RecentOrders .NewUsers__Orders .containerSummary .status1 {
+    color: var(--color-danger);
+}
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .RecentOrders .NewUsers__Orders .containerSummary .status2 {
+    color: var(--color-warning);
+}
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .RecentOrders .NewUsers__Orders .containerSummary .status3 {
+    color: var(--color-primary);
+}
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .RecentOrders .NewUsers__Orders .containerSummary .detailsColor {
+    color: var(--color-primary);
+}
+
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .container, 
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container,
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .RecentOrders .NewUsers__Orders,
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectinRigth .SloganCont,
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders01 span,
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02 .remindersNamber0 {
+    background-color: var( --color-white);
+    box-shadow: 2px 2px 20px var(--box-shadow);
+    transition: background-color 0.5s, box-shadow 0.5s;
+
+}
