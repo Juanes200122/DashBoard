@@ -29,7 +29,7 @@
                     <div class="containerSlogan">
                         <div class="slogan"></div>
                         <span class="sloganText">Spec<span class="colorText">tral</span></span>
-                    </div>                    
+                    </div>
                     <span class="tittlePag">Analytics</span>
                 </div>
                 <div class="containP2">
@@ -57,7 +57,7 @@
                 <div class="containerAll_Navbar">
                     <input type="checkbox" id="dropdownMenu">
                     <label class="labelLP" for="dropdownMenu"><i class="bi bi-arrow-left-short"></i></label>
-                    <div class="conatiner navbarNav">                   
+                    <div class="conatiner navbarNav">
                         <nav class="navbarNavList">
                             <div class="container__navbar nav">
                                 <ul>
@@ -199,33 +199,32 @@
                         <div class="NewUsers__Container">
                             <div class="NewUsers__Profiles">
                                 <div class="containerImg">
-                                    <img src="image/WhatsApp Image 2023-10-19 at 11.51.11 PM.jpeg"
-                                        alt="">
+                                    <img src="image/WhatsApp Image 2023-10-19 at 11.51.11 PM.jpeg" alt="">
                                     <span class="nameProfile">Luis Manuel</span>
                                     <span class="timeprofile">
                                         <div class="active"></div>Hace 3 horas
                                     </span>
                                 </div>
                                 <div class="containerImg">
-                                    <img src="https://imagenesparaperfildewasap.com/wp-content/uploads/imagenes-de-mujeres-bonitas-gratis-para-descargar.jpg"
+                                    <img src="image/5734f2d0-b3e0-40f3-a1bf-f1161504769d.jpg"
                                         alt="">
-                                    <span class="nameProfile">Karen</span>
+                                    <span class="nameProfile">Mario Sarabia</span>
                                     <span class="timeprofile">
-                                        <div class="active"></div>Hace 3 horas
+                                        <div class="active"></div>Hace 8 horas
                                     </span>
                                 </div>
                                 <div class="containerImg">
-                                    <img src="https://imagenesparaperfildewasap.com/wp-content/uploads/fotos-de-mujeres-hermosas-para-descargar.jpg"
+                                    <img src="image/6144df65-808a-4a69-be25-62b4f9da7fe6.jpg"
                                         alt="">
-                                    <span class="nameProfile">Valeria</span>
+                                    <span class="nameProfile">Oswaldo</span>
                                     <span class="timeprofile">
                                         <div class="active"></div>Hace 54 minutos
                                     </span>
                                 </div>
                                 <div class="containerImg">
-                                    <img src="https://imagenesparaperfildewasap.com/wp-content/uploads/imagenes-de-hombres-casuales-para-descargar.jpg"
+                                    <img src="image/d433f0a9-c580-469c-9a80-581ab612deae.jpg"
                                         alt="">
-                                    <span class="nameProfile">Juan</span>
+                                    <span class="nameProfile">Alejandro</span>
                                     <span class="timeprofile">
                                         <div class="active"></div>Hace 1 hora
                                     </span>
@@ -237,7 +236,7 @@
                                 </div>
                             </div>
                         </div>
-                    </div>                                    
+                    </div>
                 </div>
 
                 <div class="conatiner sectinRigth">
@@ -294,52 +293,18 @@
     <script src="js/AnimationProgress.js"></script>
 
     <script>
-        // Inicializa el contador
         var contadorRecordatorios = 2; // Empieza en 2 porque ya hay dos recordatorios iniciales
 
         function agregarRecordatorio() {
-            // Clona el recordatorio y actualiza el contador
             var nuevoRecordatorio = document.querySelector('.remindersNamber0').cloneNode(true);
             contadorRecordatorios++;
-            // Actualiza el texto del contador en el elemento con id "count_Reminder"
             document.getElementById('count_Reminder').innerText = contadorRecordatorios;
 
-            // Inserta el nuevo recordatorio
             var remindersAdd = document.querySelector('.remindersAdd');
             remindersAdd.parentNode.insertBefore(nuevoRecordatorio, remindersAdd);
         }
     </script>
 
-
-<script>document.addEventListener('DOMContentLoaded', function () {
-    const container = document.querySelector('.NewUsers__Container');
-    let isMouseDown = false;
-    let startX;
-    let scrollLeft;
-
-    container.addEventListener('mousedown', (e) => {
-        isMouseDown = true;
-        startX = e.pageX - container.offsetLeft;
-        scrollLeft = container.scrollLeft;
-    });
-
-    container.addEventListener('mouseleave', () => {
-        isMouseDown = false;
-    });
-
-    container.addEventListener('mouseup', () => {
-        isMouseDown = false;
-    });
-
-    container.addEventListener('mousemove', (e) => {
-        if (!isMouseDown) return;
-        e.preventDefault();
-        const x = e.pageX - container.offsetLeft;
-        const walk = (x - startX) * 3; // Puedes ajustar este valor para cambiar la velocidad del desplazamiento
-        container.scrollLeft = scrollLeft - walk;
-    });
-});
-</script>
 
 
 </body>

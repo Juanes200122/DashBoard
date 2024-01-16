@@ -320,7 +320,7 @@ body {
             }
 
             .sectionCenter {
-                width: 70%;
+                width: 100%;
                 transition: width 0.5s ease;
                 overflow-x: auto;
 
@@ -430,10 +430,16 @@ body {
                     }
                 }                
             }
+            .sectinRigth::-webkit-scrollbar {
+                width: 1px; /* Establece el ancho de la barra de desplazamiento */
+            }
             .sectinRigth {
+                width: 25%;
                 display: flex;
                 flex-direction: column;
                 gap: 20px;
+                overflow-x: auto;
+                min-width: 300px;
 
                 .SloganCont {
                     width: 100%;
@@ -445,6 +451,7 @@ body {
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
+                    padding: 20px;
                     img {
                         width: 150px;
                     }
@@ -540,7 +547,7 @@ body {
                                 }
                             }
                             .typeReminder {
-                                width: 160px;
+                                width: 60%;
                                 height: 60px;
                                 display: flex;
                                 flex-direction: column;
@@ -554,7 +561,7 @@ body {
                                 }
                             }
                             .faviconReminder {
-                                width: 60px;
+                                width: 30%;
                                 height: 60px;
                                 display: flex;
                                 justify-content: end;
@@ -637,12 +644,33 @@ body {
     .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles {
         width: 200px;
     }
+    .dark-mode .divContainer__Master .mainSection .sectionClass__contain .labelLP {
+        display: none;
+    }
+    
+    .divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav {
+        width: 70px;
+    }
+    
+    .divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .container__navbar {
+        overflow-y: auto;
+        height: 100%;
+        width: 180px;
+    }
+    
+    .divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .container__navbar ul li a span {
+        display: none;
+    }
+    .divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .labelLP {
+        display: none;
+    }
 }
 
 @media (max-width: 950px) {
     .divContainer__Master .headerContainer .containUp .containP1 .tittlePag {
         margin-left: 12px;
     }
+    
 }
 
 @media (max-width: 760px) {
@@ -665,31 +693,15 @@ body {
     }
 
     .divContainer__Master .mainSection .sectionClass__contain {
-        padding: 15px;
+        padding: 2px;
     }
 
     .divContainer__Master .headerContainer .containUp .containP1 .tittlePag {
         display: none;
     }
-
-    .divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav {
-        width: 70px;
-    }
-
-    .divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .container__navbar ul li a span {
+    .divContainer__Master .mainSection .sectionClass__contain .sectinRigth {
         display: none;
     }
-
-    .dark-mode .divContainer__Master .mainSection .sectionClass__contain .labelLP {
-        display: none;
-    }
-
-    .divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .container__navbar {
-        overflow-y: auto;
-        height: 100%;
-        width: 180px;
-    }
-
 }
 
 @media (max-width: 580px) {
@@ -700,6 +712,13 @@ body {
     .divContainer__Master .headerContainer .containUp .containP2 {
         align-items: center;
         gap: 30px;
+    }
+    .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp1,
+    .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp2, .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp3 {
+        gap: 10px;
+    }
+    .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container {
+        padding: 10px;
     }
 }
 
