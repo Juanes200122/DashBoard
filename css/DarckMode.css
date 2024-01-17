@@ -38,6 +38,7 @@
 }
 .dark-mode .divContainer__Master .mainSection .sectionClass__contain .labelLP {
     background-color: var( --color-white);
+    transition: background-color 0.5s, box-shadow 0.5s;
 }
 
 
@@ -57,7 +58,7 @@
 }
 
 .dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .container, 
-.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container,
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .containerCanvas,
 .dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .RecentOrders .NewUsers__Orders,
 .dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectinRigth .SloganCont,
 .dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders01 span,

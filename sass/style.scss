@@ -364,69 +364,25 @@ body {
                     .NewUsers__Container {   
                         display: flex;
                         justify-content: center;  
-                        background-color: var(--color-cards);
-                        box-shadow: 2px 2px 20px var(--color-boxShadow);
+                        width: 100%;                       
                         height: auto;
-                        border-radius: 30px;                   
-                        .NewUsers__Profiles {
+                        gap: 20px;
+                        .containerCanvas {
+                            background-color: var(--color-cards);
+                            box-shadow: 2px 2px 20px var(--color-boxShadow);
+                            border-radius: 30px; 
+                            width: 50%;
                             height: auto;
                             display: flex;
-                            justify-content: start;
+                            justify-content: center;
                             align-items: center;
-                            flex-wrap: wrap;
-                            padding: 20px;
-                            gap: 20px;
-    
-                            .containerImg {
-                                width: 200px;
-                                display: flex;
-                                flex-direction: column;
-                                align-items: center;
-                                transition: background-color 0.5s, box-shadow 0.5s;
-
-    
-                                a {
-                                    color: rgb(131, 131, 131);
-                                    transition: color 0.2s ease-in-out;
-    
-                                    &:hover {
-                                        color: var(--color-primary);
-                                    }
-                                }
-    
-                                i {
-                                    font-size: 60px;
-                                }
-    
-                                img {
-                                    width: 100px;
-                                    height: 100px;
-                                    border-radius: 50%;
-                                }
-    
-                                .timeprofile {
-                                    font-size: 15px;
-                                    color: rgb(131, 131, 131);
-                                    display: flex;
-                                    justify-content: center;
-                                    align-items: center;
-                                    gap: 5px;
-    
-                                    .active {
-                                        width: 10px;
-                                        height: 10px;
-                                        background-color: red;
-                                        border-radius: 50%;
-                                    }
-                                }
-    
-                                .nameProfile {
-                                    font-weight: bold;
-                                    font-size: 25px;
-                                    margin-top: 10px;
-                                }
-                            }
-                        }
+                            flex-direction: column;
+                            box-sizing: border-box;
+                            canvas {
+                                width: 100%;
+                                height: 100%;
+                            }                           
+                        }                        
                     }
                 }                
             }
