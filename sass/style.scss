@@ -318,238 +318,282 @@ body {
             .sectionCenter::-webkit-scrollbar {
                 width: 1px;
             }
-
-            .sectionCenter {
+            .ContainerIframe {
                 width: 100%;
-                transition: width 0.5s ease;
-                overflow-x: auto;
-
-                .Containerlitics {
-                    display: flex;
-                    gap: 20px;
-
-                    .container {
-                        width: 100%;
-                        height: 170px;
-                        background-color: var(--color-cards);
-                        box-shadow: 2px 2px 20px var(--color-boxShadow);
-                        border-radius: 30px;
-                    }
-
-                    .lp1,
-                    .lp2,
-                    .lp3 {
+                gap: 20px;
+                display: flex;
+                .sectionCenter {
+                    width: 100%;
+                    transition: width 0.5s ease;
+                    overflow-x: auto;
+    
+                    .Containerlitics {
                         display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        padding: 10px;
-                        gap: 70px;
-                        transition: gap 0.5s ease;
-
-                        .containerSAles {
+                        gap: 20px;
+    
+    
+                        .container {
+                            width: 100%;
+                            height: 140px;
+                            background-color: var(--color-cards);
+                            box-shadow: 2px 2px 20px var(--color-boxShadow);
+                            border-radius: 30px;
+                        }
+    
+                        .lp1,
+                        .lp2,
+                        .lp3 {
                             display: flex;
-                            flex-direction: column;
-                            text-align: center;
-
-                            span:nth-child(2) {
+                            justify-content: center;
+                            align-items: center;
+                            padding: 10px;
+                            gap: 70px;
+                            transition: gap 0.5s ease;
+                            position: relative;
+    
+                            .containerSAles {
+                                display: flex;
+                                flex-direction: column;
+                                text-align: center;
+                                z-index: 99;
+    
+                                span:nth-child(2) {
+                                    font-weight: bold;
+                                    font-size: 30px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    gap: 10px;
+                                    i {
+                                        font-size: 20px;
+                                        color: var(--color-info-dark);
+                                    }
+    
+                                }
+                            }
+                            .info1 {
+                                position: relative;                                                                      
+                                .info_01:hover::before { 
+                                    width: 290px;
+                                    content: 'Estas son tus ventas totales';
+                                    font-size: 15px;
+                                    font-weight: 100;
+                                    position: absolute;
+                                    right: -190px;
+                                    top: 70px;
+                                }
+                            }
+                        }
+                        
+                        .lp1::before,
+                        .lp2::before,
+                        .lp3::before {
+                            content: '';
+                            width: 80%;
+                            position: absolute;
+                            background-color: var(--color-cards);
+                            border-radius: 10px;
+                            height: 165px;
+                            z-index: -1;
+                        }
+                    }
+    
+                    .NewUsers {
+                        margin-top: 20px;
+    
+                        .containerCanvasLine {
+                            width: 99.5%;
+                            min-width: 500px;
+                            background-color: var(--color-cards);
+                            box-shadow: 2px 2px 20px var(--color-boxShadow);
+                            border-radius: 30px;
+                            padding: 20px;
+                            margin-top: 30px;
+    
+                            span {
                                 font-weight: bold;
-                                font-size: 30px;
-
+                                font-size: 20px;
                             }
                         }
                     }
+    
+    
                 }
-
-                .NewUsers {
-                    .NewUsers__Container {   
-                        display: flex;
-                        justify-content: center;  
-                        width: 100%;                       
-                        height: auto;
-                        gap: 20px;
-                        .containerCanvas {
-                            background-color: var(--color-cards);
-                            box-shadow: 2px 2px 20px var(--color-boxShadow);
-                            border-radius: 30px; 
-                            width: 50%;
-                            height: auto;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            flex-direction: column;
-                            box-sizing: border-box;
-                            canvas {
-                                width: 100%;
-                                height: 100%;
-                            }                           
-                        }                        
-                    }
-                }                
-            }
-            .sectinRigth::-webkit-scrollbar {
-                width: 1px; /* Establece el ancho de la barra de desplazamiento */
-            }
-            .sectinRigth {
-                width: 25%;
-                display: flex;
-                flex-direction: column;
-                gap: 20px;
-                overflow-x: auto;
-                min-width: 300px;
-
-                .SloganCont {
-                    width: 100%;
-                    height: 300px;
-                    background-color: var(--color-cards);
-                    box-shadow: 2px 2px 20px var(--color-boxShadow);
-                    border-radius: 30px;
+    
+                .sectinRigth::-webkit-scrollbar {
+                    width: 1px;
+                    /* Establece el ancho de la barra de desplazamiento */
+                }
+    
+                .sectinRigth {
+                    width: 25%;
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
                     flex-direction: column;
-                    padding: 20px;
-                    img {
-                        width: 150px;
-                    }
-                    .sloganText {
-                        font-size: 30px;
-                        font-weight: bold;
-                    }
-                    .pef0 {
-                        color: rgb(131, 131, 131);
-                    }
-                    
-                }
-
-                .containerReminders {
-                    width: 100%;
-                    border-radius: 30px;
-
-                    .reminders01 {
+                    gap: 20px;
+                    overflow-x: auto;
+                    min-width: 300px;
+                    .TotalSAles {
+                        width: 100%;
+                        height: 100px;
+                        background-color: var(--color-cards);
+                        box-shadow: 2px 2px 20px var(--color-boxShadow);
+                        border-radius: 30px;
                         display: flex;
-                        justify-content: space-between;
-                        align-items: center;
+                        padding: 20px;
+                        .dlr02 {
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            align-items: start;
+                            width: 80%;   
+                            .tittleCash {
+                                font-size: 18px;
+                            } 
+                            .lpr002 {
+                                font-weight: bold;
+                                font-size: 22px;
 
-                        .svg_Reminder {
-                            width: 40px;
-                            height: 40px;
-                            background-color: var(--color-cards);
-                            border-radius: 50%;
+                            }                                                    
+                        }
+                        .iocns {
+                            width: 20%;
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            position: relative;
-                            #count_Reminder {
-                                width: 20px;
-                                height: 20px;
-                                background-color: var(--color-danger);
+                            font-size: 25px;
+                        }
+
+                    }
+
+    
+                    .SloganCont {
+                        width: 100%;
+                        height: 300px;
+                        background-color: var(--color-cards);
+                        box-shadow: 2px 2px 20px var(--color-boxShadow);
+                        border-radius: 30px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        flex-direction: column;
+                        padding: 20px;
+    
+                        img {
+                            width: 150px;
+                        }
+    
+                        .sloganText {
+                            font-size: 30px;
+                            font-weight: bold;
+                        }
+    
+                        .pef0 {
+                            color: rgb(131, 131, 131);
+                        }
+    
+                    }
+    
+                    .containerReminders {
+                        width: 100%;
+                        border-radius: 30px;
+    
+                        .reminders01 {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+    
+                            .svg_Reminder {
+                                width: 40px;
+                                height: 40px;
+                                background-color: var(--color-cards);
                                 border-radius: 50%;
                                 display: flex;
                                 justify-content: center;
                                 align-items: center;
-                                position: absolute;
-                                transform: translate(-15px, -15px);
-                                font-size: 12px;
-                                color: white;
-                            }
-
-                            i {
-                                font-size: 20px;
-                            }
-
-                        }
-                    }
-                    .reminders02::-webkit-scrollbar {
-                        width: 8px; /* Establece el ancho de la barra de desplazamiento */
-                    }
-                    .reminders02::-webkit-scrollbar-thumb {
-                        background-color: var(--color-danger); /* Establece el color del pulgar de la barra de desplazamiento */
-                        border-radius: 10px; /* Establece el radio de los bordes para la barra de desplazamiento en WebKit */
-                    }                   
-                    
-                    .reminders02 {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 10px;
-                        height: 320px;
-                        overflow-x: auto;
-                        padding: 0px 5px 0px 0px;
-
-                        .remindersNamber0 {
-                            width: 100%;
-                            height: 100px;
-                            border-radius: 30px;
-                            background-color: var(--color-cards);
-                            box-shadow: 2px 2px 20px var(--color-boxShadow);
-                            padding: 20px;
-                            display: flex;
-                            .iconsReminder {
-                                width: 60px;
-                                height: 60px;
-                                border-radius: 15px;
-                                background-color: var(--color-success);
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
+                                position: relative;
+    
+                                #count_Reminder {
+                                    width: 20px;
+                                    height: 20px;
+                                    background-color: var(--color-danger);
+                                    border-radius: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    position: absolute;
+                                    transform: translate(-15px, -15px);
+                                    font-size: 12px;
+                                    color: white;
+                                }
+    
                                 i {
-                                    font-size: 40px;
-                                    color: black;
+                                    font-size: 20px;
                                 }
-                            }
-                            .pencil {
-                                background-color: var(--color-danger);
-                                i {
-                                    font-size: 30px;
-                                }
-                            }
-                            .typeReminder {
-                                width: 60%;
-                                height: 60px;
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                font-size: 12px;
-                                padding-left: 10px;
-                            
-                                .tittle {
-                                    font-weight: bold;
-                                    font-size: 17px;
-                                }
-                            }
-                            .faviconReminder {
-                                width: 30%;
-                                height: 60px;
-                                display: flex;
-                                justify-content: end;
-                                align-items: center;
-                                i {
-                                    cursor: pointer;
-                                    font-size: 30px;
-                                }
+    
                             }
                         }
-
-                        .remindersAdd {
-                            width: 100%;
-                            height: 100px;
-                            border-radius: 30px;
-                            border: 2px dashed var(--color-primary);
+    
+                        .reminders02::-webkit-scrollbar {
+                            width: 8px;
+                            /* Establece el ancho de la barra de desplazamiento */
+                        }
+    
+                        .reminders02::-webkit-scrollbar-thumb {
+                            background-color: var(--color-danger);
+                            /* Establece el color del pulgar de la barra de desplazamiento */
+                            border-radius: 10px;
+                            /* Establece el radio de los bordes para la barra de desplazamiento en WebKit */
+                        }
+    
+                        .reminders02 {
                             display: flex;
-                            justify-content: center;
-                            align-items: center;
+                            flex-direction: column;
                             gap: 10px;
-                            color: var(--color-primary);
-                            padding: 30px;
-                            i {
-                                font-size: 30px;
-                            }
+                            height: 320px;
+                            overflow-x: auto;
+                            padding: 0px 5px 0px 0px;
+    
+                            .remindersNamber0 {
+                                width: 100%;
+                                height: 100px;
+                                border-radius: 30px;
+                                background-color: var(--color-cards);
+                                box-shadow: 2px 2px 20px var(--color-boxShadow);
+                                padding: 20px;
+                                display: flex;
+                                gap: 20px;
+                                img {
+                                    width: 60px;
+                                    height: 60px;
+                                    border-radius: 50%;
+                                }  
+                                .containerUser {
+                                    display: flex;
+                                    flex-direction: column;
+                                    width: 100%;
+                                    .tittleUser {
+                                        font-size: 20px;
+                                        font-weight: bold;
+                                    }
+                                    .activeUser {
+                                        display: flex;
+                                        align-items: center;
+                                        gap: 10px;
+                                        .actions {
+                                            width: 10px;
+                                            height: 10px;
+                                            background-color: red;
+                                            border-radius: 50%;
+                                        }
+                                    }                                
+                                }                            
+                            }                            
                         }
                     }
                 }
             }
         }
     }
-
 }
 
 @media (max-width: 1782px) {
@@ -557,24 +601,29 @@ body {
         width: 900px;
     }
 }
+
+@media (max-width: 1650px) {
+
+    .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectionCenter .Containerlitics .lp1, .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectionCenter .Containerlitics .lp2, .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectionCenter .Containerlitics .lp3 {
+        gap: 20px;
+    }
+}
 @media (max-width: 1562px) {
     .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles {
         width: 683px;
     }
+
 }
 
-@media (max-width: 1650px) {
-
-    .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp1,
-    .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp2,
-    .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp3 {
-        gap: 20px;
-    }
-}
 
 @media (max-width: 1480px) {
     .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics {
         flex-direction: column;
+    }
+    .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectionCenter .Containerlitics .lp1::before,
+    .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectionCenter .Containerlitics .lp2::before, 
+    .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectionCenter .Containerlitics .lp3::before {
+        display: none;
     }
 
     .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp1,
@@ -585,6 +634,7 @@ body {
 
 
 }
+
 @media (max-width: 1339px) {
     .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles {
         width: 460px;
@@ -596,27 +646,30 @@ body {
         width: 100%;
     }
 }
+
 @media (max-width: 1120px) {
     .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container .NewUsers__Profiles {
         width: 200px;
     }
+
     .dark-mode .divContainer__Master .mainSection .sectionClass__contain .labelLP {
         display: none;
     }
-    
+
     .divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav {
         width: 70px;
     }
-    
+
     .divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .container__navbar {
         overflow-y: auto;
         height: 100%;
         width: 180px;
     }
-    
+
     .divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .navbarNav .navbarNavList .container__navbar ul li a span {
         display: none;
     }
+
     .divContainer__Master .mainSection .sectionClass__contain .containerAll_Navbar .labelLP {
         display: none;
     }
@@ -626,10 +679,19 @@ body {
     .divContainer__Master .headerContainer .containUp .containP1 .tittlePag {
         margin-left: 12px;
     }
-    
+
+    .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .containerCanvasLine {
+        display: none;
+    }
+
 }
 
-@media (max-width: 760px) {
+@media (max-width: 792px) {
+
+    .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectionCenter .Containerlitics .lp1, .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectionCenter .Containerlitics .lp2, .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectionCenter .Containerlitics .lp3 { 
+        gap: 15px;
+    }
+
 
     .divContainer__Master .mainSection .sectionClass__contain {
         height: calc(100vh - 80px);
@@ -638,11 +700,18 @@ body {
     .divContainer__Master .headerContainer .containUp .containP1 .containerSlogan .sloganText {
         font-size: 20px;
     }
-
+    .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectionCenter,
+    .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectinRigth {
+        overflow: visible;
+        height: auto;
+        width: 100%;
+    }
+ 
     .divContainer__Master .headerContainer .containUp .containP1 .containerSlogan .slogan {
         width: 40px;
         height: 40px;
     }
+  
 
     .divContainer__Master .headerContainer .containUp {
         padding: 15px;
@@ -655,11 +724,30 @@ body {
     .divContainer__Master .headerContainer .containUp .containP1 .tittlePag {
         display: none;
     }
+
     .divContainer__Master .mainSection .sectionClass__contain .sectinRigth {
         display: none;
     }
+    .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectinRigth .containerReminders .reminders01 {
+        padding-right: 15px;
+    }
+    .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectionCenter .NewUsers {
+        margin-top: 0;
+    }
+
+
 }
 
+@media (max-width: 670px) {
+    .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe {
+        flex-direction: column;
+        overflow-y: auto;
+    }
+
+   .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectinRigth .SloganCont {
+        display: none;
+    }
+}
 @media (max-width: 580px) {
     .divContainer__Master .headerContainer .containUp .containP2 .sectionprofile .userlp1 {
         display: none;
@@ -669,12 +757,17 @@ body {
         align-items: center;
         gap: 30px;
     }
+    .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp1, .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp2, .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp3 {
+        justify-content: space-around;
+    }
+
     .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp1,
-    .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp2, .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp3 {
+    .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp2,
+    .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .Containerlitics .lp3 {
         gap: 10px;
     }
+
     .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .NewUsers__Container {
         padding: 10px;
     }
 }
-

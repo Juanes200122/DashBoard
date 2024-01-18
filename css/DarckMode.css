@@ -4,6 +4,7 @@
     transition: background-color 0.5s, box-shadow 0.5s;
 }
 
+
 .dark-mode {
     background-color: var(--color-background);
     color: var(--color-dark);
@@ -18,8 +19,9 @@
 .dark-mode .divContainer__Master .mainSection .sectionClass__contain .navbarNav .navbarNavList .container__navbar ul:hover li a {
     color: var(--color-primary);
 }
-.dark-mode .divContainer__Master .mainSection .sectionClass__contain .navbarNav .navbarNavList .container__navbar ul:hover {
-    background-color: var(--color-background);
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .navbarNav .navbarNavList .container__navbar ul:hover,
+.dark-mode  .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectinRigth .containerReminders .reminders01 .svg_Reminder {
+    background-color: var( --color-white);
 }
 .dark-mode .divContainer__Master .mainSection .sectionClass__contain .navbarNav .navbarNavList .logoutUser:hover {
     background-color: var(--color-background);
@@ -38,6 +40,14 @@
 }
 .dark-mode .divContainer__Master .mainSection .sectionClass__contain .labelLP {
     background-color: var( --color-white);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectionCenter .Containerlitics .lp1::before,
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectionCenter .Containerlitics .lp2::before, 
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectionCenter .Containerlitics .lp3::before {
+    background-color: var( --color-white);
+    box-shadow: 2px 2px 20px var(--box-shadow);
     transition: background-color 0.5s, box-shadow 0.5s;
 }
 
@@ -62,9 +72,12 @@
 .dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .RecentOrders .NewUsers__Orders,
 .dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectinRigth .SloganCont,
 .dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders01 span,
-.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02 .remindersNamber0 {
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectinRigth .containerReminders .reminders02 .remindersNamber0,
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .sectionCenter .NewUsers .containerCanvasLine,
+.dark-mode .divContainer__Master .mainSection .sectionClass__contain .ContainerIframe .sectinRigth .TotalSAles {
     background-color: var( --color-white);
     box-shadow: 2px 2px 20px var(--box-shadow);
     transition: background-color 0.5s, box-shadow 0.5s;
 
 }
+

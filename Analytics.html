@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spectral</title>
+    <link rel="shortcut icon" href="image/sloganColor.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/DarckMode.css">
+    <link rel="stylesheet" href="css/buttonDarck.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+ 
+</head>
+<body>
+    
+    <div class="divContainer__Master">
+        <header class="headerContainer">
+            <nav class="containUp">
+                <div class="containP1">
+                    <div class="containerSlogan">
+                        <div class="slogan"></div>
+                        <span class="sloganText">Spec<span class="colorText">tral</span></span>
+                    </div>
+                    <span class="tittlePag">Analytics</span>
+                </div>
+                <div class="containP2">
+                    <div class="content">
+                        <label class="checkBox">
+                            <input onclick="toggleDarkMode()" type="checkbox" id="ch1" />
+                            <div class="transition"></div>
+                        </label>
+                    </div>
+                    <div class="sectionprofile">
+                        <div class="userlp1">
+                            <span class="nameUser01">Hey, <span class="weightText">Juan</span></span>
+                            <span class="nameUser02">Admin</span>
+                        </div>
+                        <img class="imgProfile"
+                            src="https://www.educaciontrespuntocero.com/wp-content/uploads/2020/04/mejores-bancos-de-imagenes-gratis.jpg"
+                            alt="">
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="mainSection">
+            <section class="sectionClass__contain">
+
+                <div class="containerAll_Navbar">
+                    <input type="checkbox" id="dropdownMenu">
+                    <label class="labelLP" for="dropdownMenu"><i class="bi bi-arrow-left-short"></i></label>
+                    <div class="conatiner navbarNav">
+                        <nav class="navbarNavList">
+                            <div class="container__navbar nav">
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="bi bi-columns-gap"></i>
+                                            <span class="listNav">Dashboard</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="bi bi-person"></i>
+                                            <span class="listNav">Users</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="bi bi-journal-bookmark-fill"></i>
+                                            <span class="listNav">History</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="bi bi-graph-up"></i>
+                                            <span>Analytics</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="bi bi-ticket"></i>
+                                            <span>Tickets</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="bi bi-clipboard2-check"></i>
+                                            <span>Sale list</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="bi bi-exclamation-octagon"></i>
+                                            <span>Reports</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="bi bi-gear"></i>
+                                            <span>Setiings</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <a href="">
+                                            <i class="bi bi-plus"></i>
+                                            <span>New login</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="logoutUser">
+                                <a href="">
+                                    <i class="bi bi-box-arrow-left"></i>
+                                </a>
+                            </div>
+                        </nav>
+                    </div>
+                </div>
+                <div class="ContainerIframe Iframe" id="changeIframe">
+                    <div class="conatiner sectionCenter">
+                        <div class="Containerlitics">
+                            <div class="container lp1">
+                                <div class=" containerSAles info1">
+                                    <span>Ventas</span>
+                                    <span>$ 10.786</span>
+                                </div>
+                                <div>
+                                    <div class="progresss">
+                                        <svg class="svg3">
+                                            <circle cx="38" cy="38" r="36"></circle>
+                                        </svg>
+                                        <div class="percentage">
+                                            <p id="progreso">+0%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container lp2">
+                                <div class=" containerSAles">
+                                    <span>Busquedas</span>
+                                    <span>$ 120.786</span>
+                                </div>
+                                <div>
+                                    <div class="progresss">
+                                        <svg class="svg1">
+                                            <circle cx="38" cy="38" r="36"></circle>
+                                        </svg>
+                                        <div class="percentage">
+                                            <p id="progreso">+0%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container lp3">
+                                <div class=" containerSAles">
+                                    <span>Visitas</span>
+                                    <span>$ 70.786</span>
+                                </div>
+                                <div>
+                                    <div class="progresss">
+                                        <svg class="svg2">
+                                            <circle cx="38" cy="38" r="36"></circle>
+                                        </svg>
+                                        <div class="percentage">
+                                            <p id="progreso">+0%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="NewUsers">
+                            <div class="containerCanvasLine">
+                                <span>Ventas Mensuales</span>
+                                <canvas id="myLineChart"></canvas>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="conatiner sectinRigth">
+                        <div class="TotalSAles">
+                            <div class="dlr02">
+                                <div class="tittleCash">Inventario total</div>
+                                <div class="lpr002">
+                                    <span class="CashContainer" id="cash">$</span>
+                                    <span>200.000.000</span>
+                                </div>
+                            </div>
+                            <div class="iocns"><i class="bi bi-wallet2"></i></div>
+                        </div>
+                        <div class="SloganCont">
+                            <img src="image/sloganColor.svg" alt="">
+                            <span class="sloganText">Spectral</span>
+                            <span class="pef0">Frontend Developer</span>
+                        </div>
+                        <div class="containerReminders">
+                            <div class="reminders01">
+                                <h3>Nuevos usuarios</h3>                              
+                            </div>
+                            <div class="reminders02" id="remindersContainer">
+                                <div class="remindersNamber0">
+                                   <img src="image/5734f2d0-b3e0-40f3-a1bf-f1161504769d.jpg" alt=""> 
+                                   <div class="containerUser">
+                                        <span class="tittleUser">Mario Sarabia</span>
+                                        <span class="activeUser"><div class="actions"></div>Hace 3 horas</span>
+                                   </div>
+                                </div>
+                                <div class="remindersNamber0">
+                                    <img src="image/channels4_profile.jpg" alt=""> 
+                                    <div class="containerUser">
+                                         <span class="tittleUser">Marvin Stark</span>
+                                         <span class="activeUser"><div class="actions"></div>Hace 45 minutos</span>
+                                    </div>
+                                 </div> 
+                                 <div class="remindersNamber0">
+                                    <img src="image/6144df65-808a-4a69-be25-62b4f9da7fe6.jpg" alt=""> 
+                                    <div class="containerUser">
+                                         <span class="tittleUser">Oswaldo forero</span>
+                                         <span class="activeUser"><div class="actions"></div>Hace 45 minutos</span>
+                                    </div>
+                                 </div>   
+                                 <div class="remindersNamber0">
+                                    <img src="image/d433f0a9-c580-469c-9a80-581ab612deae.jpg" alt=""> 
+                                    <div class="containerUser">
+                                         <span class="tittleUser">Alejandro</span>
+                                         <span class="activeUser"><div class="actions"></div>Hace 45 minutos</span>
+                                    </div>
+                                 </div>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/AnimationProgress.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/chart.js"></script>
+
+</body>
+
+</html>
